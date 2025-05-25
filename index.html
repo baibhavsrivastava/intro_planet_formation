@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary of Planet Formation Processes</title>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        body {
+            font-family: sans-serif, serif, monospace;
+            margin: 20px;
+        }
+
+        header,
+        footer {
+            background-color: #ffffff;
+            /* padding: 5px; */
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        h1 {
+            color: #000000;
+            font-size: 2.5em;
+            text-decoration: underline double;
+        }
+
+        h2 {
+            color: #000000;
+            font-size: 2em;
+            text-decoration: underline double;
+        }
+
+        h3 {
+            color: #000000;
+            font-size: 1.5em;
+            text-decoration: underline;
+        }
+
+        h4 {
+            color: #000000;
+            font-size: 1.2em;
+        }
+
+        h5 {
+            color: #000000;
+            font-size: 1em;
+            font-style: italic;
+        }
+
+        /* ul {
+            list-style-type: none;
+            padding: 10px;
+        } */
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: #333;
+        }
+
+        em {
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Planet Formatiaon</h1>
+        <h3> A Short Summary </h3>
+        <em>Baibhav Srivastava</em>
+    </header>
+
+    <main>
+        A brief summary of the processes involved in the formation of planets. 
+        <svg width="100%" height="180" viewBox="0 0 1000 180" xmlns="http://www.w3.org/2000/svg">
+            <!-- Stages -->
+            <g font-family="sans-serif" font-size="14" text-anchor="middle">
+            <!-- Dust -->
+            <circle cx="100" cy="90" r="25" fill="#f4d03f"/>
+            <text x="100" y="160">Dust (μm–mm)</text>
+            <!-- Coagulation -->
+            <line x1="125" y1="90" x2="225" y2="90" stroke="black" marker-end="url(#arrow)"/>
+            <text x="175" y="75">Coagulation</text>
+
+            <!-- Pebbles -->
+            <circle cx="250" cy="90" r="30" fill="#f39c12"/>
+            <text x="250" y="160">Pebbles (mm–cm)</text>
+            <line x1="280" y1="90" x2="380" y2="90" stroke="black" marker-end="url(#arrow)"/>
+            <text x="330" y="75">Streaming Instability</text>
+
+            <!-- Planetesimals -->
+            <circle cx="400" cy="90" r="35" fill="#e67e22"/>
+            <text x="400" y="160">Planetesimals (km)</text>
+            <line x1="435" y1="90" x2="535" y2="90" stroke="black" marker-end="url(#arrow)"/>
+            <text x="485" y="75">Accretion</text>
+
+            <!-- Embryos -->
+            <circle cx="550" cy="90" r="40" fill="#d35400"/>
+            <text x="550" y="160">Embryos (Moon–Mars)</text>
+            <line x1="590" y1="90" x2="690" y2="90" stroke="black" marker-end="url(#arrow)"/>
+            <text x="640" y="75">Collisions & Pebbles</text>
+
+            <!-- Protoplanets -->
+            <circle cx="700" cy="90" r="45" fill="#a04000"/>
+            <text x="700" y="160">Protoplanets</text>
+            <line x1="745" y1="90" x2="845" y2="90" stroke="black" marker-end="url(#arrow)"/>
+            <text x="795" y="75">Gas Accretion</text>
+
+            <!-- Giant Planets -->
+            <circle cx="860" cy="90" r="50" fill="#6e2c00"/>
+            <text x="860" y="160">Giant Planets</text>
+            </g>
+
+            <!-- Arrow Marker -->
+            <defs>
+            <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5"
+                    markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="black"/>
+            </marker>
+            </defs>
+        </svg>
+    </main>
+
+    <nav>
+        <h3>Table of Contents</h3>
+        <ul>
+            <li><a href="chapter1.html">Chapter 1: Dust Growth and Coagulation</a></li>
+            <ul>
+                <li><a href="chapter1.html#collisional-growth">Collisional Growth</a></li>
+                <li><a href="chapter1.html#disk-turbulence">Role of Turbulence</a></li>
+                <li><a href="chapter1.html#fragmentation">Fragmentation</a></li>
+                <li><a href="chapter1.html#sticking">Sticking and Rebound</a></li>
+                <li><a href="chapter1.html#size-distribution">Size Distribution</a></li>
+                <li><a href="chapter1.html#observational-evidence">Observational Evidences</a></li>
+            </ul>
+
+            <li><a href="chapter2.html">Chapter 2: Radial Drift</a></li>
+            <ul>
+                <li><a href="chapter2.html#stokes-number">Stokes Number</a></li>
+                <li><a href="chapter2.html#dust-transport">Dust Transport</a></li>
+                <li><a href="chapter2.html#drift-limited-growth">Drift-Limited Growth</a></li>
+                <li><a href="chapter2.html#pressure-bump">Pressure Bumps</a></li>
+                <li><a href="chapter2.html#observational-evidence-radial-drift">Observational Evidences</a></li>
+            </ul>
+
+            <li><a href="chapter3.html">Chapter 3: Planetesimal Formation</a></li>
+            <ul>
+                <li><a href="chapter3.html#si">Streaming Instability</a></li>
+                <li><a href="chapter3.html#toomre">Gravitational Collapse and Toomre Parameter</a></li>
+                <li><a href="chapter3.html#observational-evidence-planetesimals">Observational Evidences</a></li>
+            </ul>
+
+            <li><a href="chapter4.html">Chapter 4: Growth of Embryos</a></li>
+            <ul>
+                <li><a href="chapter4.html#planetesimal">Planetesimal Accretion</a></li>
+                <ul>
+                    <li><a href="chapter4.html#runaway">Runaway Growth</a></li>
+                    <li><a href="chapter4.html#oligarchic">Oligarchic Growth</a></li>
+                </ul>
+                <li><a href="chapter4.html#pebble">Pebble Accretion</a></li>
+                <li><a href="chapter4.html#giant-impacts">Giant Impacts</a></li>
+                <li><a href="chapter4.html#observational-evidence-embryos">Observational Evidences</a></li>
+            </ul>
+
+            <li><a href="chapter5.html">Chapter 5: Giant Planet Formation</a></li>
+            <ul>
+                <li><a href="chapter5.html#core-accretion">Core Accretion</a></li>
+                <li><a href="chapter5.html#disk-instability">Disk Instability</a></li>
+                <li><a href="chapter5.html#isolation-mass">Isolation Mass</a></li>
+                <li><a href="chapter5.html#observational-evidence-giant-planets">Observational Evidences</a></li>
+            </ul>
+            <li><a href="chapter6.html">Chapter 6: Disk-driven Migration</a></li>
+            <ul>
+                <li><a href="chapter6.html#disk-evolution">Disk Evolution</a></li>
+                <ul>
+                    <li><a href="chapter6.html#viscous">Viscous Evolution</a></li>
+                    <li><a href="chapter6.html#photoevaporation">Photoevaporation</a></li>
+                    <li><a href="chapter6.html#lifetime">Disk Lifetime</a></li>
+                </ul>
+                <li><a href="chapter6.html#migration-types">Types of Migration</a></li>
+                <ul>
+                    <li><a href="chapter6.html#type-i">Type I Migration</a></li>
+                    <li><a href="chapter6.html#type-ii">Type II Migration</a></li>
+                    <li><a href="chapter6.html#type-iii">Type III Migration</a></li>
+                </ul>
+                <li><a href="chapter6.html#migration-resonances">Migration Resonances</a></li>
+                <ul>
+                    <li><a href="chapter6.html#mean-motion">Mean Motion Resonances</a></li>
+                    <li><a href="chapter6.html#lindblad">Lindblad Resonances</a></li>
+                </ul>
+                <li><a href="chapter6.html#migration-models">Models of Disk-driven Migration</a></li>
+                <li><a href="chapter6.html#observational-evidence-migration">Observational Evidences</a></li>
+            </ul>
+        </ul>
+    </nav>
+
+</body>
+
+</html>
