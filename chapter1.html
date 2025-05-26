@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary of Planet Formation Processes</title>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        body {
+            font-family: sans-serif, serif, monospace;
+            margin: 20px;
+        }
+
+        header,
+        footer {
+            background-color: #ffffff;
+            /* padding: 5px; */
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        h1 {
+            color: #000000;
+            font-size: 2.5em;
+            text-decoration: underline double;
+        }
+
+        h2 {
+            color: #000000;
+            font-size: 2em;
+            text-decoration: underline double;
+        }
+
+        h3 {
+            color: #000000;
+            font-size: 1.5em;
+            text-decoration: underline;
+        }
+
+        h4 {
+            color: #000000;
+            font-size: 1.2em;
+        }
+
+        h5 {
+            color: #000000;
+            font-size: 1em;
+            font-style: italic;
+        }
+
+        /* ul {
+            list-style-type: none;
+            padding: 10px;
+        } */
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: #333;
+        }
+
+        em {
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+  <h2>Chapter 1: Dust Growth and Coagulation</h2>
+
+  <h3 id="collisional-growth">Collisional Growth</h3>
+  <p>
+    The first step in planet formation is the sticking of sub-micron dust grains in the protoplanetary disk. 
+    Collisions are induced by Brownian motion, turbulence, differential settling, and radial drift. The relative velocity due to Brownian motion is given by:
+  </p>
+  <p>\[
+  v_{\text{BM}} = \sqrt{\frac{8kT}{\pi m}}
+  \]</p>
+  <p>
+    where \(k\) is Boltzmann’s constant, \(T\) is the temperature, and \(m\) is the particle mass.
+  </p>
+
+  <h3 id="disk-turbulence">Role of Turbulence</h3>
+  <p>
+    Turbulence increases collision rates by inducing relative velocities:
+  </p>
+  <p>\[
+  v_{\text{turb}} \sim \sqrt{\alpha} \, c_s \left| \text{St}_1 - \text{St}_2 \right|
+  \]</p>
+  <p>
+    where \(\alpha\) is the Shakura-Sunyaev turbulence parameter, \(c_s\) is the local sound speed, and \(\text{St}\) is the Stokes number.
+  </p>
+
+  <h3 id="fragmentation">Fragmentation</h3>
+  <p>
+    At high velocities, instead of sticking, particles fragment. The fragmentation threshold velocity \(v_f\) depends on material properties. For silicates, \(v_f \sim 1 \, \text{m/s}\), while for ices it's \(v_f \sim 10 \, \text{m/s}\).
+  </p>
+  <p>
+    Growth is halted when \(v_{\text{rel}} > v_f\), leading to the <strong>fragmentation barrier</strong>.
+  </p>
+
+  <h3 id="sticking">Sticking and Rebound</h3>
+  <p>
+    Small grains may stick due to van der Waals forces. For larger grains, bouncing becomes likely:
+  </p>
+  <ul>
+    <li><strong>Sticking regime:</strong> \(v < 0.1 \, \text{m/s}\)</li>
+    <li><strong>Bouncing regime:</strong> \(0.1 \, \text{m/s} < v < 1 \, \text{m/s}\)</li>
+    <li><strong>Fragmentation regime:</strong> \(v > 1 \, \text{m/s}\)</li>
+  </ul>
+  <p>
+    This leads to the <strong>bouncing barrier</strong>, another obstacle to planetesimal formation.
+  </p>
+
+  <h3 id="size-distribution">Size Distribution</h3>
+  <p>
+    The evolution of particle size distribution can be modeled using the Smoluchowski coagulation equation:
+  </p>
+  <p>\[
+  \frac{\partial n(m)}{\partial t} = \frac{1}{2} \int_0^m K(m', m - m') n(m') n(m - m') \, dm' - n(m) \int_0^\infty K(m, m') n(m') \, dm'
+  \]</p>
+  <p>
+    where \(n(m)\) is the number density of particles of mass \(m\), and \(K(m_1, m_2)\) is the collision kernel.
+  </p>
+
+  <h3 id="observational-evidence">Observational Evidences</h3>
+  <ul>
+    <li>
+      <strong>Millimeter continuum observations</strong> (e.g., ALMA) show grain growth in disks via spectral slopes.
+    </li>
+    <li>
+      <strong>Polarization measurements</strong> reveal non-spherical and aligned grain growth in some disks.
+    </li>
+    <li>
+      <strong>Dust traps</strong> inferred from ring/gap structures suggest localized grain growth beyond barriers.
+    </li>
+  </ul>
+</body>
+</html>
